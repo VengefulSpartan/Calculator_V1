@@ -1,0 +1,31 @@
+.screen{
+    border: solid 1px;
+    width:auto;
+    height: 200px;
+}
+
+*{
+    margin: 0;
+    text-align: center;
+    font-size: xx-large;
+    
+}
+.bla,.lba{
+    display: inline-block;
+}
+.left{
+    display: grid;
+    gap: 10px;
+    grid-template-columns:1fr 1fr 1fr ;
+}
+.right{
+    display: grid;
+    gap: 10px;
+    grid-template-columns:1fr 1fr  ;    
+}
+#add{
+    grid-row:3/5 ;
+}
+.number,.function{
+    border-radius: 15%;
+}

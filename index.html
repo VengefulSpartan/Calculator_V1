@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="#">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="outer">
+    <div class="screen">
+        <h3>Screen</h3>
+        <span id="num1"></span>
+        <span id="fun"></span>
+        <span id="num2"></span>
+        <span id="equal">=</span>  
+        <span id="ans"></span>
+    </div>
+    <div class="keys">
+    <div class="bla">
+        
+        <div class="left">
+            <button class="number" id="g" onclick="inVal1('g')">7</button>
+            <button class="number" id="h" onclick="inVal1('h')">8</button>
+            <button class="number" id="i" onclick="inVal1('i')">9</button>
+            <button class="number" id="d" onclick="inVal1('d')">4</button>
+            <button class="number" id="e" onclick="inVal1('e')">5</button>
+            <button class="number" id="f"   onclick="inVal1('f')">6</button>
+            <button class="number" id="a"   onclick="inVal1('a')">1</button>
+            <button class="number" id="b"   onclick="inVal1('b')">2</button>
+            <button class="number" id="c"   onclick="inVal1('c')">3</button>
+            <button class="number" id="z"   onclick="inVal1('z')">0</button>
+            <button class="number" id="dz"  onclick="inVal1('dz')">00</button>
+            <button class="number" id="dot" onclick="inVal1('dot')">.</button>
+            
+        </div>
+            
+    </div>
+        <div class="lba">
+            <div class="right">
+                <button class="function" onclick="callin('frac')" id="frac">%</button>
+                <button class="function" onclick="callin('root')" id="root">√</button>
+                <button class="function" onclick="callin('mult')" id="mult">×</button>
+                <button class="function" onclick="callin('div')" id="div"  >÷</button>
+                <button class="function" onclick="callin('add')" id="add"  >+</button>
+                <button class="function" onclick="callin('min')" id="min"  >-</button>
+                <button id="reload" onclick="location.reload()">AC</button>
+            </div>
+            
+        </div>
+        
+    </div>
+    </div>
+    <script src="./index.js" charset="UTF-8"></script>
+</body>
+</html>
